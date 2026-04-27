@@ -102,11 +102,23 @@ python legged_gym/scripts/play.py --task=go2_handstand
 ```bash
 python legged_gym/scripts/play.py --task=go2_stairs
 ```
+
+```bash
+python legged_gym/scripts/play.py --task=go2_trottojump
+```
+
+
 **说明**：
 
 - Play 启动参数与 Train 相同。
 - 默认加载实验文件夹上次运行的最后一个模型。
 - 可通过 `load_run` 和 `checkpoint` 指定其他模型。
+
+**play两个策略**
+```bash
+python legged_gym/scripts/play_with_policies.py --task=go2_trottojump
+```
+
 
 #### 💾 导出网络
 
